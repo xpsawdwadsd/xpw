@@ -1,0 +1,31 @@
+<view class="menu_image">
+    <image src="{{menuObj.cover}}" mode="widthFix"/>
+</view>
+<view class="menu_price">
+  ${{menuObj.price}}/份
+</view>
+<view class="menu_title">
+  {{menuObj.title}}
+</view>
+<view class="menu_description">
+  {{menuObj.description}}
+</view>
+<view class="btm_tool">
+  <navigator open-type="switchTab" url="/pages/index/index" class="tool_item">
+  <view class="iconfont icon-shouye">
+  </view>
+    <view>首页</view>
+  </navigator>
+  
+  <navigator open-type="switchTab" url="/pages/cart/cart" class="tool_item">
+  <view class="iconfont icon-gouwuche">
+  </view>
+    <view>购物车</view>
+  </navigator>
+  <view class="tool_item btn_cart" bindtap="handleCartAdd">
+    <view>加入购物车</view>
+  </view>
+  <view class="tool_item btn_buy" bindtap="handleBuy">
+    <view>去结算</view>
+  </view>
+</view>

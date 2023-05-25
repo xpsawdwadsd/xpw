@@ -1,0 +1,61 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <SearchBar></SearchBar>
+  <!-- 轮播图 -->
+  <view class="index_swiper">
+    <swiper indicator-dots autoplay circular>
+      <swiper-item 
+      wx:for="{{swiperList}}" 
+      wx:for-item="swiper" 
+      wx:key="id">
+        <navigator>
+          <image mode="widthFix" src="{{swiper.cover}}">
+          </image>
+        </navigator>
+      </swiper-item>
+  
+    </swiper>
+  </view>
+  <!-- 轮播图 -->
+  <!-- 展示菜系 -->
+  <view class="index_cuiSine">
+    <view class="cuiSineRow">
+      <navigator 
+      bindtap="handleTypeJump"
+      data-index="{{index}}"
+      wx:for="{{cuiSine_row1}}" 
+      wx:for-item="cuiSine" 
+      wx:key="id">
+        <image mode="widthFix" src="{{cuiSine.cover}}"></image>
+        <div >{{cuiSine.title}}</div>
+      </navigator>
+    </view>
+    <view class="cuiSineRow">
+      <navigator 
+      bindtap="handleTypeJump"
+      data-index="{{index+4}}"
+      wx:for="{{cuiSine_row2}}" 
+      wx:for-item="cuiSine" 
+      wx:key="id">
+        <image mode="widthFix" src="{{cuiSine.cover}}"></image>
+        <div >{{cuiSine.title}}</div>
+      </navigator>
+    </view>
+  </view>
+  <!-- 展示菜系 -->
+  <!-- 推荐美食 -->
+  <view class="index_hotMenu">
+    <view class="title"> 为您推荐 </view>
+    <view class="menu_list">
+      <view class="menu_detail" wx:for="{{hotMenuList}}" wx:for-item="hotMenu" wx:key="id">
+        <navigator url="/pages/menu_detail/menu_detail?id={{hotMenu.id}}">
+          <image src="{{hotMenu.cover}}" mode="widthFix"></image>
+          <view class="menu_title">{{hotMenu.title}}</view>
+          <view class="menu_price">${{hotMenu.price}}</view>
+          <button size="mini" type="default" >立即下单</button>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 推荐美食 -->
+</view>

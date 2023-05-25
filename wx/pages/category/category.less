@@ -1,0 +1,67 @@
+.cates {
+  height: 100%;
+
+  .cates_container {
+    height: ~'cal(100vh - 100rpx)';
+    display: flex;
+    .left_menu {
+      flex: 2;
+      height: 980rpx;
+      background-color: rgb(240, 244, 248);
+      border-radius: 20rpx;
+      .cuisine_item {
+        margin-top: 10rpx;
+        height: 80rpx;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 30rpx;
+        padding-top: 40rpx;
+      }
+
+      .active {
+        font-weight: bolder;
+        color: var(--themeColor);
+        border-left: 8rpx solid currentColor;
+      }
+    }
+    .right_context {
+      flex: 5;
+      .menu_item{
+        padding-top:3rpx;
+        padding-left: 5rpx;
+        padding-right: 5rpx;
+
+        navigator{
+          border-radius: 10rpx;
+          display: flex;
+          margin: 10rpx;
+          background-color: rgb(240, 244, 248);
+          image{
+            flex: 3;
+            border-radius: 10rpx;
+          }
+          .right{
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .menu_title{
+              padding-top: 10rpx;
+              padding-left: 20rpx;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-weight: bolder;
+            }
+            .menu_price{
+              padding-top: 10rpx;
+              padding-left: 20rpx;
+              padding-bottom: 10rpx;
+            }
+          }
+        }
+      }
+    }
+}
+}

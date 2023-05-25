@@ -1,0 +1,64 @@
+.cates {
+  height: 100%;
+}
+.cates .cates_container {
+  height: cal(100vh - 100rpx);
+  display: flex;
+}
+.cates .cates_container .left_menu {
+  flex: 2;
+  height: 980rpx;
+  background-color: #f0f4f8;
+  border-radius: 20rpx;
+}
+.cates .cates_container .left_menu .cuisine_item {
+  margin-top: 10rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 30rpx;
+  padding-top: 40rpx;
+}
+.cates .cates_container .left_menu .active {
+  font-weight: bolder;
+  color: var(--themeColor);
+  border-left: 8rpx solid currentColor;
+}
+.cates .cates_container .right_context {
+  flex: 5;
+}
+.cates .cates_container .right_context .menu_item {
+  padding-top: 3rpx;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+}
+.cates .cates_container .right_context .menu_item navigator {
+  border-radius: 10rpx;
+  display: flex;
+  margin: 10rpx;
+  background-color: #f0f4f8;
+}
+.cates .cates_container .right_context .menu_item navigator image {
+  flex: 3;
+  border-radius: 10rpx;
+}
+.cates .cates_container .right_context .menu_item navigator .right {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cates .cates_container .right_context .menu_item navigator .right .menu_title {
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+}
+.cates .cates_container .right_context .menu_item navigator .right .menu_price {
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  padding-bottom: 10rpx;
+}

@@ -1,0 +1,13 @@
+<view class="search_row">
+<!-- model:value双向绑定 -->
+  <input type="text" model:value="{{inputValue}}" placeholder="输入菜品关键字" bindinput="handleInput"/>
+  <button hidden="{{!isFocus}}" bindtap="handleCancel">取消</button>  
+</view>
+<view class="search_content">
+    <navigator
+    class="search_item"
+    wx:for="{{menuList}}"
+    wx:key="id"
+     url="/pages/menu_detail/menu_detail?id={{item.id}}">
+     {{item.title}}</navigator>
+</view>

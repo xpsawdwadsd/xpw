@@ -1,0 +1,49 @@
+<!-- 就餐的餐桌 -->
+<!-- <view class="user_info_row">
+  <view class="user_info">
+    <view>
+      餐桌{{index}}号
+    </view>
+  </view> 
+   </view> -->
+<!--就餐的餐桌 -->
+
+<!-- 菜单 -->
+<view class="cart_content">
+  <view class="cart_main">
+  
+    <view class="cart_item"
+    wx:for="{{orderObj}}"
+    wx:key="id"> 
+      <!-- 图片 -->
+      <navigator class="cart_img_warp" url="/pages/menu_detail/menu_detail?id={{item.id}}">
+        <image src="{{item.goodspic}}" mode="widthFix"></image>
+      </navigator>
+      <!-- 图片 -->
+      
+      <!-- 介绍 -->
+      <view class="cart_info_warp">
+        <navigator url="/pages/menu_detail/menu_detail?id={{item.id}}">
+          <view class="goods_title">
+          {{item.goodstitle}}
+          </view>
+        </navigator>
+        <view class="goods_price_warp">
+          <view class="goods_price">
+            {{item.goodsprice}}
+          </view>
+          <view class="cart_num_tool">
+            <view class="goods_num">
+              ×{{item.goodsnumber}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 介绍 -->
+
+    </view>
+ 
+  </view>
+</view>
+<!-- 菜单 -->
+

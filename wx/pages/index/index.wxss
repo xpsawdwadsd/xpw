@@ -1,0 +1,57 @@
+.index_swiper swiper {
+  width: 750rpx;
+  height: 375rpx;
+}
+.index_swiper swiper swiper-item image {
+  width: 100%;
+  background-color: var(--themeColor);
+}
+.index_cuiSine {
+  padding: 20rpx;
+  background-color: #fffdfd;
+}
+.index_cuiSine .cuiSineRow {
+  display: flex;
+}
+.index_cuiSine .cuiSineRow navigator {
+  flex: 1;
+}
+.index_cuiSine .cuiSineRow navigator image {
+  width: 187rpx;
+}
+.index_cuiSine .cuiSineRow navigator div {
+  padding-left: 55rpx;
+}
+.index_hotMenu .title {
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 20rpx;
+  color: var(--themeColor);
+  background-color: #e6e3e3;
+}
+.index_hotMenu .menu_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index_hotMenu .menu_list .menu_detail {
+  width: 46%;
+  text-align: center;
+  margin: 15rpx;
+}
+.index_hotMenu .menu_list .menu_detail navigator image {
+  border-radius: 30rpx;
+  width: 100%;
+}
+.index_hotMenu .menu_list .menu_detail navigator .menu_title {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.index_hotMenu .menu_list .menu_detail navigator .menu_price {
+  color: #42b0d1;
+}
+.index_hotMenu .menu_list .menu_detail navigator button {
+  border-radius: 40rpx;
+  color: #42b0d1;
+}

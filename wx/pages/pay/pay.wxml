@@ -1,0 +1,66 @@
+<!--就餐的餐桌 -->
+<view class="user_info_row">
+  <view class="user_info">
+    <view>
+      餐桌{{index}}号
+    </view>
+  </view> 
+   </view>
+<!--就餐的餐桌 -->
+<!-- 菜单 -->
+<view class="cart_content">
+  <view class="cart_main">
+  
+    <view class="cart_item"
+    wx:for="{{cart}}"
+    wx:key="id"> 
+      <!-- 图片 -->
+      <navigator class="cart_img_warp" url="/pages/menu_detail/menu_detail?id={{item.id}}">
+        <image src="{{item.cover}}" mode="widthFix"></image>
+      </navigator>
+      <!-- 图片 -->
+      
+      <!-- 介绍 -->
+      <view class="cart_info_warp">
+        <navigator url="/pages/menu_detail/menu_detail?id={{item.id}}">
+          <view class="goods_title">
+          {{item.title}}
+          </view>
+        </navigator>
+        <view class="goods_price_warp">
+          <view class="goods_price">
+            {{item.price}}
+          </view>
+          <view class="cart_num_tool">
+            <view class="goods_num">
+              ×{{item.num}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 介绍 -->
+
+    </view>
+ 
+  </view>
+</view>
+<!-- 菜单 -->
+
+<!-- 底部结算 -->
+<view class="footer_tool">
+<!-- 合计 -->
+<view class="total_price_wrap">
+  <view class="total_price">
+    合计：￥<text class="total_price_text">{{totalPrice}}</text>
+  </view>
+</view>
+<!-- 合计 -->
+
+<!-- 结算 -->
+<view class="order_pay_wrap" bindtap="handleOrderPay">
+  付款
+</view>
+<!-- 结算 -->
+</view>
+<!-- 底部结算 -->
+ 

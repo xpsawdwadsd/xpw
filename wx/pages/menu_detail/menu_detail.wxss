@@ -1,0 +1,60 @@
+.menu_price {
+  padding: 15rpx;
+  font-size: 50rpx;
+  font-weight: 600;
+  color: #ff2400;
+}
+.menu_title {
+  padding: 15rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  border-top: 1rpx solid #dedede;
+}
+.menu_description {
+  padding: 0rpx 10rpx 25rpx 10rpx;
+  font-size: 35rpx;
+  color: #5f5b5b;
+  border-bottom: 1rpx solid #dedede;
+}
+.btm_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  border-radius: 40rpx;
+  height: 100rpx;
+}
+.btm_tool .tool_item {
+  padding-left: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+.btm_tool .tool_item .iconfont {
+  padding-left: 13rpx;
+}
+.btm_tool .btn_cart {
+  justify-content: center;
+  align-content: center;
+  font-size: 30rpx;
+  font-weight: 550;
+  background-image: linear-gradient(90deg, #bee0f0, var(--themeColor));
+  color: #4b4848;
+  flex: 2;
+  border-bottom-left-radius: 50rpx;
+  border-top-left-radius: 50rpx;
+}
+.btm_tool .btn_buy {
+  justify-content: center;
+  align-content: center;
+  font-size: 30rpx;
+  font-weight: 550;
+  background-image: linear-gradient(90deg, var(--themeColor), #bee0f0);
+  color: #4b4848;
+  flex: 2;
+  border-bottom-right-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+}

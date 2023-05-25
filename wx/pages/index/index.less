@@ -1,0 +1,66 @@
+.index_swiper{
+  swiper{
+    width: 750rpx;
+    height: 375rpx;
+    swiper-item{
+      image{
+        width: 100%;
+        background-color: var(--themeColor);
+      }
+    }
+  }
+}
+.index_cuiSine{
+  padding: 20rpx;
+  background-color: #fffdfd;
+  .cuiSineRow{
+    display: flex;
+    navigator{
+      flex:1;
+      image{
+        width: 187rpx;
+      }
+      div{
+        padding-left: 55rpx;
+      }
+    }
+  }
+}
+.index_hotMenu{
+  .title{
+    font-size: 32rpx;
+    font-weight: 600;
+    padding: 20rpx;
+    color: var(--themeColor);
+    background-color: #e6e3e3;
+  }
+  .menu_list{
+    display: flex;
+    flex-wrap: wrap;
+    .menu_detail{
+      width: 46%;
+      text-align: center;
+      margin: 15rpx;
+      navigator{
+        
+        image{
+          border-radius: 30rpx;
+          width: 100%;
+        }
+        .menu_title{
+          font-weight: 500;
+          white-space: nowrap;
+          overflow:hidden;
+          text-overflow: ellipsis;
+        }
+        .menu_price{
+          color: #42b0d1;
+        }
+        button{
+          border-radius: 40rpx;
+          color: #42b0d1;
+        }
+      }
+    }
+  }
+}

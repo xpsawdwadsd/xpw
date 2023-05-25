@@ -1,0 +1,60 @@
+.tabs{
+  .tabs_title{
+    display: flex;
+    .title_item{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15rpx;
+
+    }
+    .active{
+      color:var(--themeColor);
+      border-bottom: 5rpx solid currentColor;
+    }
+  }
+  .tabs_content{
+    .order_main{
+      .order_item{
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+        color: #666;
+        .order_no_row{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 10rpx;
+          .order_no_text{
+
+          }
+          .order_no_value{
+
+          }
+        }
+        .order_price_row{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 10rpx;
+          .order_price_text{
+
+          }
+          .order_price_value{
+            color: rgb(240, 65, 65);
+            font-size: 40rpx;
+          }
+        }
+        .order_time_row{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 10rpx;
+          .order_time_text{
+
+          }
+          .order_time_value{
+
+          }
+        }
+      }
+    }
+  }
+}
